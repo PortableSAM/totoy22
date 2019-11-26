@@ -29,11 +29,9 @@ export default class App extends React.Component {
               </Link>
             </Drawer>
             <Content>
-              <div>
-                <Route exact path="/" component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/project" component={Project} />
-              </div>
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/project" component={Project} />
             </Content>
           </Layout>
         </div>
