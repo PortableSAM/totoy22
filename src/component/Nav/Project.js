@@ -33,8 +33,8 @@ export default class Project extends React.Component {
           onChange={tabId => this.setState({ activeTab: tabId })}
           ripple
         >
-          <Tab>Weekly</Tab>
-          <Tab>Daily</Tab>
+          <Tab className="Week_tab">Weekly</Tab>
+          <Tab className="Daily_tab">Daily</Tab>
         </Tabs>
         <Grid>
           <Cell col={12}>

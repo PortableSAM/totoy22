@@ -18,9 +18,15 @@ export default class App extends React.Component {
               </Navigation>
             </Header>
             <Drawer title="Build App">
-              <Link to="/">Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/project">Project</Link>
+              <Link className="drawer_Item" to="/">
+                Home
+              </Link>
+              <Link className="drawer_Item" to="/about">
+                About
+              </Link>
+              <Link className="drawer_Item" to="/project">
+                Project
+              </Link>
             </Drawer>
             <Content>
               <Route exact path="/" component={Home} />
