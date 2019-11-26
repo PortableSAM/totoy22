@@ -2,9 +2,7 @@ import React from "react";
 import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./component/Home";
-import Project from "./component/Project";
-import About from "./component/About";
+import { Home, About, Project } from "./component/Nav";
 
 export default class App extends React.Component {
   render() {
