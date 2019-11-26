@@ -12,7 +12,7 @@ export default class App extends React.Component {
       <Router>
         <div>
           <Layout>
-            <Header title="Build App">
+            <Header title="Build App" scroll>
               <Navigation>
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
