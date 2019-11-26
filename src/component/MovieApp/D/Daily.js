@@ -1,8 +1,7 @@
 import React from "react";
 import Axios from "axios";
-import MainURL from "./MainURL";
-import Key from "./Key";
-import TargetDt from "./TargetDt";
+
+import { MainURL, Key, TargetDt } from "../lib";
 
 import DList from "./DList";
 export default class DailyMovie extends React.Component {
