@@ -3,7 +3,7 @@ import Axios from "axios";
 
 import { MainURL, Key, TargetWt } from "../lib";
 import WeekList from "./WeekList";
-import "./Week.css";
+import "./MovieApp.css";
 console.log(TargetWt);
 export default class WeeklyMovie extends React.Component {
   state = {
@@ -80,7 +80,7 @@ export default class WeeklyMovie extends React.Component {
                 <h3>{weekly.boxofficeType}</h3>
               </div>
               <span className="gathering_data">
-                <h3>**Gathering data**</h3>
+                <h3>** Gathering data **</h3>
               </span>
             </div>
           )}

@@ -4,7 +4,7 @@ import Axios from "axios";
 import { MainURL, Key, TargetDt } from "../lib";
 
 import DList from "./DList";
-import "./Daily.css";
+import "../W/MovieApp.css";
 export default class DailyMovie extends React.Component {
   state = {
     daily: "",
