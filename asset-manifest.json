@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/totoy22/static/css/main.de9df00f.chunk.css",
-    "main.js": "/totoy22/static/js/main.cc7a760b.chunk.js",
-    "main.js.map": "/totoy22/static/js/main.cc7a760b.chunk.js.map",
+    "main.js": "/totoy22/static/js/main.35c29a76.chunk.js",
+    "main.js.map": "/totoy22/static/js/main.35c29a76.chunk.js.map",
     "runtime-main.js": "/totoy22/static/js/runtime-main.a5d3ce76.js",
     "runtime-main.js.map": "/totoy22/static/js/runtime-main.a5d3ce76.js.map",
     "static/css/2.60a6b8e0.chunk.css": "/totoy22/static/css/2.60a6b8e0.chunk.css",
     "static/js/2.5720e9dd.chunk.js": "/totoy22/static/js/2.5720e9dd.chunk.js",
     "static/js/2.5720e9dd.chunk.js.map": "/totoy22/static/js/2.5720e9dd.chunk.js.map",
     "index.html": "/totoy22/index.html",
-    "precache-manifest.1805ec95b128393525909f96da447da4.js": "/totoy22/precache-manifest.1805ec95b128393525909f96da447da4.js",
+    "precache-manifest.2d225b228edd3d804ddc41b13f22fde5.js": "/totoy22/precache-manifest.2d225b228edd3d804ddc41b13f22fde5.js",
     "service-worker.js": "/totoy22/service-worker.js",
     "static/css/2.60a6b8e0.chunk.css.map": "/totoy22/static/css/2.60a6b8e0.chunk.css.map",
     "static/css/main.de9df00f.chunk.css.map": "/totoy22/static/css/main.de9df00f.chunk.css.map"
@@ -19,6 +19,6 @@
     "static/css/2.60a6b8e0.chunk.css",
     "static/js/2.5720e9dd.chunk.js",
     "static/css/main.de9df00f.chunk.css",
-    "static/js/main.cc7a760b.chunk.js"
+    "static/js/main.35c29a76.chunk.js"
   ]
 }
