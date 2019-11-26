@@ -9,6 +9,7 @@
 }
 .loader_text {
   color: #ff0984;
+  font-family: "Anton", sans-serif;
   text-shadow: 0 3px 6px #ff58ab, 0 7px 12px #ff91c8;
 }
 
@@ -62,6 +63,7 @@ h5 {
   display: flex;
   justify-content: left;
   font-size: 18px;
+  font-family: "Nanum Pen Script", cursive;
 }
 
 .data a {
@@ -83,6 +85,7 @@ h5 {
   justify-content: center;
   align-items: center;
   font-weight: 600;
+  font-family: "Nanum Pen Script", cursive;
 }
 
 .gathering_data h3 {
@@ -91,6 +94,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Indie Flower", cursive;
 }
 
 .gathering_data,

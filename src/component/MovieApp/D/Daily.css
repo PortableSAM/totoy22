@@ -8,6 +8,7 @@
 }
 .loader_text {
   color: #ff0984;
+  font-family: "Anton", sans-serif;
   text-shadow: 0 3px 6px #ff58ab, 0 7px 12px #ff91c8;
 }
 
