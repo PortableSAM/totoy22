@@ -4,6 +4,7 @@ import Axios from "axios";
 import { MainURL, Key, TargetDt } from "../lib";
 
 import DList from "./DList";
+import "./Daily.css";
 export default class DailyMovie extends React.Component {
   state = {
     daily: "",
@@ -46,8 +47,8 @@ export default class DailyMovie extends React.Component {
           <div>
             <div className="type">
               <h3>{daily.boxofficeType}</h3>
-              <h5>{daily.showRange}</h5>
             </div>
+            <h5>Date: {daily.showRange}</h5>
             <div className="movies">
               {dList.map((movie, index) => (
                 <DList
