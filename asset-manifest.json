@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/totoy22/static/css/main.f05016c4.chunk.css",
-    "main.js": "/totoy22/static/js/main.d4485934.chunk.js",
-    "main.js.map": "/totoy22/static/js/main.d4485934.chunk.js.map",
+    "main.css": "/totoy22/static/css/main.6be2f1e5.chunk.css",
+    "main.js": "/totoy22/static/js/main.db0a0ffa.chunk.js",
+    "main.js.map": "/totoy22/static/js/main.db0a0ffa.chunk.js.map",
     "runtime-main.js": "/totoy22/static/js/runtime-main.a5d3ce76.js",
     "runtime-main.js.map": "/totoy22/static/js/runtime-main.a5d3ce76.js.map",
     "static/css/2.60a6b8e0.chunk.css": "/totoy22/static/css/2.60a6b8e0.chunk.css",
-    "static/js/2.ffc9a3f0.chunk.js": "/totoy22/static/js/2.ffc9a3f0.chunk.js",
-    "static/js/2.ffc9a3f0.chunk.js.map": "/totoy22/static/js/2.ffc9a3f0.chunk.js.map",
+    "static/js/2.1d6fe045.chunk.js": "/totoy22/static/js/2.1d6fe045.chunk.js",
+    "static/js/2.1d6fe045.chunk.js.map": "/totoy22/static/js/2.1d6fe045.chunk.js.map",
     "index.html": "/totoy22/index.html",
-    "precache-manifest.63f6c0f4a1c19eb24c2172d23e2fbc83.js": "/totoy22/precache-manifest.63f6c0f4a1c19eb24c2172d23e2fbc83.js",
+    "precache-manifest.6c2bdf8fb6a0ae13450407448c5f8bfb.js": "/totoy22/precache-manifest.6c2bdf8fb6a0ae13450407448c5f8bfb.js",
     "service-worker.js": "/totoy22/service-worker.js",
     "static/css/2.60a6b8e0.chunk.css.map": "/totoy22/static/css/2.60a6b8e0.chunk.css.map",
-    "static/css/main.f05016c4.chunk.css.map": "/totoy22/static/css/main.f05016c4.chunk.css.map"
+    "static/css/main.6be2f1e5.chunk.css.map": "/totoy22/static/css/main.6be2f1e5.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.a5d3ce76.js",
     "static/css/2.60a6b8e0.chunk.css",
-    "static/js/2.ffc9a3f0.chunk.js",
-    "static/css/main.f05016c4.chunk.css",
-    "static/js/main.d4485934.chunk.js"
+    "static/js/2.1d6fe045.chunk.js",
+    "static/css/main.6be2f1e5.chunk.css",
+    "static/js/main.db0a0ffa.chunk.js"
   ]
 }
