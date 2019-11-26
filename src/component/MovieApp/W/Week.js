@@ -67,8 +67,18 @@ export default class WeeklyMovie extends React.Component {
     } else {
       return (
         <div>
-          <h3>{weekly.boxofficeType}</h3>
-          <h3>Gathering data</h3>
+          {isLoading ? (
+            <div className="loader">
+              <span className="loader_text">
+                <h2>Data Loading</h2>
+              </span>
+            </div>
+          ) : (
+            <div>
+              <h3>{weekly.boxofficeType}</h3>
+              <h3>Gathering data</h3>
+            </div>
+          )}
         </div>
       );
     }
