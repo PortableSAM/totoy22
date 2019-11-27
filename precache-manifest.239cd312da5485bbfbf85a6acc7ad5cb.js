@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "96f4a8432dffd3788605ae99f3370f58",
+    "revision": "f74cd435afd35c7abd894bbcfc29391a",
     "url": "/totoy22/index.html"
   },
   {
-    "revision": "b104f748908afc258f94",
+    "revision": "aa920adf311a6b83b112",
     "url": "/totoy22/static/css/2.60a6b8e0.chunk.css"
   },
   {
-    "revision": "63fc5fd873825aa45a62",
+    "revision": "0eb1b02517d141268556",
     "url": "/totoy22/static/css/main.de9df00f.chunk.css"
   },
   {
-    "revision": "b104f748908afc258f94",
-    "url": "/totoy22/static/js/2.a724074e.chunk.js"
+    "revision": "aa920adf311a6b83b112",
+    "url": "/totoy22/static/js/2.5720e9dd.chunk.js"
   },
   {
-    "revision": "63fc5fd873825aa45a62",
-    "url": "/totoy22/static/js/main.3d18eb6f.chunk.js"
+    "revision": "0eb1b02517d141268556",
+    "url": "/totoy22/static/js/main.f9b46124.chunk.js"
   },
   {
     "revision": "a6559abc82aa92bfe286",
