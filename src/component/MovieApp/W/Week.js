@@ -1,10 +1,9 @@
 import React from "react";
 import Axios from "axios";
 
-import { MainURL, Key, TargetWt } from "../lib";
+import { MainURL, Key, TargetDt } from "../lib";
 import WeekList from "./WeekList";
 import "./MovieApp.css";
-console.log(TargetWt);
 export default class WeeklyMovie extends React.Component {
   state = {
     weekly: "",
@@ -13,7 +12,7 @@ export default class WeeklyMovie extends React.Component {
   };
 
   getWeeklyList = async () => {
-    const url = `${MainURL}/searchWeeklyBoxOfficeList.json?key=${Key}&targetDt=${TargetWt}`;
+    const url = `${MainURL}/searchWeeklyBoxOfficeList.json?key=${Key}&targetDt=${TargetDt}&weekGb=1`;
     await Axios.get(url)
       .then(res => res.data)
       .then(data => {
@@ -44,11 +43,11 @@ export default class WeeklyMovie extends React.Component {
             </div>
           ) : (
             <div>
-              <div>
+              <div className="type">
                 <h3>{weekly.boxofficeType}</h3>
-                <h5>{weekly.showRange}</h5>
               </div>
-              <div className="wMovies">
+              <h5>기간 : {weekly.showRange}</h5>
+              <div className="movies">
                 {wList.map((weeklyMovie, index) => (
                   <WeekList
                     id={weeklyMovie.id}

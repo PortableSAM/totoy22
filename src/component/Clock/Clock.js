@@ -18,6 +18,7 @@ export default class Clock extends React.Component {
   componentDidMount() {
     setInterval(this.getClock, 1000);
   }
+
   render() {
     const { time, connecting } = this.state;
 

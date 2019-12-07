@@ -5,6 +5,8 @@ import { MainURL, Key, TargetDt } from "../lib";
 
 import DList from "./DList";
 import "../W/MovieApp.css";
+
+console.log(TargetDt);
 export default class DailyMovie extends React.Component {
   state = {
     daily: "",
