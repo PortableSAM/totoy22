@@ -1,9 +1,17 @@
 import React from "react";
 import Axios from "axios";
+import momnet from "moment";
 
-import { MainURL, Key, TargetDt } from "../lib";
+import { MainURL, Key } from "../lib";
 import WeekList from "./WeekList";
 import "./MovieApp.css";
+
+const weekend = momnet()
+  .weekday(-7)
+  .format("YYYYMMDD");
+
+console.log(weekend);
+
 export default class WeeklyMovie extends React.Component {
   state = {
     weekly: "",
@@ -12,7 +20,7 @@ export default class WeeklyMovie extends React.Component {
   };
 
   getWeeklyList = async () => {
-    const url = `${MainURL}/searchWeeklyBoxOfficeList.json?key=${Key}&targetDt=${TargetDt}&weekGb=1`;
+    const url = `${MainURL}/searchWeeklyBoxOfficeList.json?key=${Key}&targetDt=${weekend}&weekGb=1`;
     await Axios.get(url)
       .then(res => res.data)
       .then(data => {
