@@ -1,4 +1,8 @@
 **Totoy22 Project**
+- Daily & Weekly Box Office List
+- Build React.JS
+- Use Kobis Open API
+- Time lib moment.js
 
 **Initial Deployment**
 - 2019.11.28
