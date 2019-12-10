@@ -2,7 +2,7 @@ import React from "react";
 import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import "./App.css";
-import { Home, About, Project } from "./component/Nav";
+import { Home, About, BoxOffice } from "./component/Nav";
 
 export default class App extends React.Component {
   render() {
@@ -14,7 +14,7 @@ export default class App extends React.Component {
               <Navigation>
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
-                <Link to="/project">Project</Link>
+                <Link to="/BoxOffice">Box Office</Link>
               </Navigation>
             </Header>
             <Drawer title="Build App">
@@ -24,14 +24,14 @@ export default class App extends React.Component {
               <Link className="drawer_Item" to="/about">
                 About
               </Link>
-              <Link className="drawer_Item" to="/project">
-                Project
+              <Link className="drawer_Item" to="/BoxOffice">
+                Box Office
               </Link>
             </Drawer>
             <Content>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
-              <Route path="/project" component={Project} />
+              <Route path="/BoxOffice" component={BoxOffice} />
             </Content>
           </Layout>
         </div>

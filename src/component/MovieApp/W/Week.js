@@ -7,7 +7,7 @@ import WeekList from "./WeekList";
 import "./MovieApp.css";
 
 const weekend = momnet()
-  .weekday(-7)
+  .day("sunday")
   .format("YYYYMMDD");
 
 console.log(weekend);
