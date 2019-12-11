@@ -4,3 +4,30 @@
   text-align: center;
   font-family: "Princess Sofia", cursive;
 }
+.about_body {
+  margin: 10px;
+  padding: 5px;
+}
+.about_left_col {
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.about_left_col p {
+  margin: 10px;
+  padding: 5px;
+  text-align: left;
+  font-size: 2.5rem;
+}
+.about_left_col i {
+  font-size: 3rem;
+  margin: 10px;
+  padding-right: 2rem;
+}
+.Edu_grid p,
+.Career_grid p {
+  font-size: 2rem;
+}
