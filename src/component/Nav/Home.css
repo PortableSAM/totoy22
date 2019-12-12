@@ -10,14 +10,19 @@
   color: #004923;
   text-shadow: 0 3px 6px #11b15e, 0 6px 12px #17f582;
 }
-
-.time h2 {
-  width: auto;
+.container {
   margin: 15px;
   padding: 10px;
+}
+
+.time h2,
+.date h2 {
+  width: auto;
+  margin: 15px;
+  padding: 15px;
   text-align: center;
+  color: #0d3f01;
+  font-family: "Jua", sans-serif;
   font-size: 5rem;
-  font-family: "East Sea Dokdo", cursive;
-  color: #004923;
   text-shadow: 0 3px 6px #11b15e, 0 6px 12px #17f582;
 }

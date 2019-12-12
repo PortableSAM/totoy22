@@ -5,11 +5,14 @@ import "moment/locale/ko";
 export default class Clock extends React.Component {
   state = {
     time: "",
+    day: "",
     connecting: true
   };
   getClock = () => {
+    const day = moment().format("LL");
     const time = moment().format("LTS");
     this.setState({
+      day,
       time,
       connecting: false
     });
@@ -20,7 +23,7 @@ export default class Clock extends React.Component {
   }
 
   render() {
-    const { time, connecting } = this.state;
+    const { day, time, connecting } = this.state;
 
     return (
       <div>
@@ -31,8 +34,13 @@ export default class Clock extends React.Component {
             </span>
           </div>
         ) : (
-          <div className="time">
-            <h2>현재시간 {time}</h2>
+          <div className="container">
+            <div className="date">
+              <h2>{day}</h2>
+              <div className="time">
+                <h2>현재시간 {time}</h2>
+              </div>
+            </div>
           </div>
         )}
       </div>
