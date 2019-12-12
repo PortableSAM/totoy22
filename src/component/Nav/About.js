@@ -7,7 +7,6 @@ export default class About extends React.Component {
   render() {
     return (
       <div className="about_body">
-        {/* ClassName부여 App.js content-body css 종속 분리 */}{" "}
         <Grid>
           <Cell className="about_left_col" col={4}>
             <div className="left_float">

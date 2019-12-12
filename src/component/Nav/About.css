@@ -4,36 +4,38 @@
   text-align: center;
   font-family: "Princess Sofia", cursive;
 }
+
 .about_body {
+  display: flex;
+  flex-flow: row wrap;
   margin: 10px;
   padding: 5px;
 }
 .about_left_col {
   margin: 10px;
   padding: 5px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-.left_float img {
-  padding: 5px;
-  margin: 10px;
-}
+
 .about_right_col {
   margin: 10px;
   padding: 5px;
+  width: 900px;
 }
 .about_left_col p {
   margin: 10px;
   padding: 5px;
   text-align: left;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .about_left_col i {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 10px;
-  padding-right: 2rem;
+  padding-right: 0.5rem;
 }
 .Edu_grid p,
 .Career_grid p {
