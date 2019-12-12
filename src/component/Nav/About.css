@@ -16,6 +16,14 @@
   justify-content: center;
   text-align: center;
 }
+.left_float img {
+  padding: 5px;
+  margin: 10px;
+}
+.about_right_col {
+  margin: 10px;
+  padding: 5px;
+}
 .about_left_col p {
   margin: 10px;
   padding: 5px;
@@ -30,4 +38,25 @@
 .Edu_grid p,
 .Career_grid p {
   font-size: 2rem;
+}
+
+@media all and (max-width: 450px) {
+  .about_left_col i {
+    padding-right: 5px;
+    margin: 5px;
+  }
+
+  .about_left_col i,
+  .about_left_col p {
+    font-size: 1.5rem;
+  }
+
+  .Edu_grid p,
+  .Career_grid p {
+    font-size: 1.5rem;
+  }
+
+  .about_right_col h2 {
+    font-size: 2.5rem;
+  }
 }
