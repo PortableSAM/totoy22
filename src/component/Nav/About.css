@@ -43,6 +43,11 @@
 }
 
 @media all and (max-width: 450px) {
+  .about_left_col,
+  .about_right_col {
+    width: 350px;
+  }
+
   .about_left_col i {
     padding-right: 5px;
     margin: 5px;
