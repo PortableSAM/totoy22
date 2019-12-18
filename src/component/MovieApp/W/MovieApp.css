@@ -9,7 +9,7 @@
 }
 .loader_text h2 {
   color: #ff0984;
-  font-family: "Princess Sofia", cursive;
+  font-family: "Song Myung", serif;
   text-shadow: 0 3px 6px #ff58ab, 0 7px 12px #ff91c8;
 }
 
@@ -35,7 +35,7 @@ h5 {
   border-radius: 15px;
   box-shadow: 0 5px 8px gray, 0 3px 6px black;
   background: white;
-  font-family: "East Sea Dokdo", cursive;
+  font-family: "Song Myung", serif;
 }
 .movies {
   width: 100%;
@@ -98,7 +98,7 @@ h5 {
   align-items: center;
   font-size: 3.5rem;
   font-weight: 900;
-  font-family: "Princess Sofia", cursive;
+  font-family: "Song Myung", serif;
 }
 
 .gathering_data,

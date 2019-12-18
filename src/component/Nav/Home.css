@@ -6,30 +6,40 @@
   margin: auto;
   padding: 10px;
   text-align: center;
-  font-family: "Princess Sofia", cursive;
-  color: #004923;
-  text-shadow: 0 3px 6px #11b15e, 0 6px 12px #17f582;
+  color: #2b2b2b;
+  font-family: "Song Myung", serif;
+  font-weight: bold;
 }
 .container {
-  margin: 15px;
+  width: 530px;
+  margin: auto;
   padding: 10px;
 }
 
 .time h2,
 .date h2 {
   width: auto;
-  margin: 15px;
-  padding: 15px;
+  margin: auto;
+  padding: 5px;
   text-align: center;
-  color: #0d3f01;
-  font-family: "Jua", sans-serif;
-  font-size: 5rem;
-  text-shadow: 0 3px 6px #11b15e, 0 6px 12px #17f582;
+  color: #2b2b2b;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Song Myung", serif;
 }
 
 @media all and (max-width: 450px) {
+  .home_text {
+    margin-top: 10vh;
+  }
+  .container {
+    width: 384px;
+  }
+  .home_text h2 {
+    font-size: 2.5rem;
+  }
   .tiem h2,
   .date h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }

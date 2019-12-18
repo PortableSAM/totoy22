@@ -1,4 +1,5 @@
 import React from "react";
+import "./Weather.css";
 
 const App_Id = "be70cc0b47a6331dc61023d7137347cb";
 
@@ -7,7 +8,8 @@ export default class TESTOWA20191218 extends React.Component {
     data: "",
     temp: 0,
     condition: "",
-    location: ""
+    location: "",
+    discript: ""
   };
 
   componentDidMount() {
@@ -24,7 +26,7 @@ export default class TESTOWA20191218 extends React.Component {
 
   _getWeather = ({ latitude, longitude }) => {
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${App_Id}`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${App_Id}&units=metric`
     )
       .then(res => res.json())
       .then(json => {
@@ -33,22 +35,28 @@ export default class TESTOWA20191218 extends React.Component {
           data: json,
           temp: json.main.temp,
           condition: json.weather[0].main,
-          location: json.name
+          location: json.name,
+          discript: json.weather[0].description
         });
         console.log(this.state);
       });
   };
 
   render() {
-    const { temp, condition, location } = this.state;
+    const { temp, condition, location, discript } = this.state;
     return (
-      <div className="container">
+      <div className="weather_container">
+        <div className="weather_title">
+          <h5>Current Weather</h5>
+        </div>
         <div className="weather_loca">
           <p>장소: {location}</p>
         </div>
         <div className="weather_condition">
-          <p>기상: {condition}</p>
-          <p>온도: {temp}</p>
+          <p>
+            기상: {condition}, {discript}
+          </p>
+          <p>온도: {temp}℃</p>
         </div>
       </div>
     );
