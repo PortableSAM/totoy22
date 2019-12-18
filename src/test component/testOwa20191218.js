@@ -5,11 +5,35 @@ const App_Id = "be70cc0b47a6331dc61023d7137347cb";
 
 export default class TESTOWA20191218 extends React.Component {
   state = {
-    lat: 0,
-    lon: 0
+    weather: null
   };
 
-  getPosition = () => {
+  componentDidMount() {
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        console.log(position);
+        this._getWeather(position.coords, position.coords);
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
+  _getWeather = ({ latitude, longitude }) => {
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${App_Id}`;
+    Axios.get(url)
+      .then(res => res.data)
+      .then(data => console.log(data));
+  };
+
+  render() {
+    return <div></div>;
+  }
+}
+
+/*
+getPosition = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         position => {
@@ -24,22 +48,39 @@ export default class TESTOWA20191218 extends React.Component {
         }
       );
     }
-    this.getWeather(this.state);
   };
+*/
 
-  getWeather = () => {
-    const { lat, lon } = this.state;
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=${App_Id}`;
-    Axios.get(url)
-      .then(res => res.data)
-      .then(data => console.log(data));
-  };
-
-  componentDidMount() {
-    this.getPosition();
+/*
+handleGeoSucces(position) {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+    this.setState({
+      lat: lat,
+      lon: lon
+    });
+    console.log(this.state);
   }
 
-  render() {
-    return <div></div>;
+  handleGeoError() {
+    console.log("위치 정보 찾을 수 없음.");
   }
-}
+
+  askForCoords() {
+    navigator.geolocation.getCurrentPosition(
+      this.handleGeoSucces,
+      this.handleGeoError
+    );
+  }
+
+  loadCoords() {
+    const loadCoords = this.handleGeoSucces;
+    if (loadCoords === null) {
+      this.askForCoords();
+    } else {
+      // get Weather
+      const { lat, lon } = this.state;
+      this.getWeather(lat, lon);
+    }
+  }
+*/
