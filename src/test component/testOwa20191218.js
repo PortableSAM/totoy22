@@ -1,11 +1,13 @@
 import React from "react";
-import Axios from "axios";
 
 const App_Id = "be70cc0b47a6331dc61023d7137347cb";
 
 export default class TESTOWA20191218 extends React.Component {
   state = {
-    weather: null
+    data: "",
+    temp: 0,
+    condition: "",
+    location: ""
   };
 
   componentDidMount() {
@@ -21,14 +23,35 @@ export default class TESTOWA20191218 extends React.Component {
   }
 
   _getWeather = ({ latitude, longitude }) => {
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${App_Id}`;
-    Axios.get(url)
-      .then(res => res.data)
-      .then(data => console.log(data));
+    fetch(
+      `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${App_Id}`
+    )
+      .then(res => res.json())
+      .then(json => {
+        //console.log(json);
+        this.setState({
+          data: json,
+          temp: json.main.temp,
+          condition: json.weather[0].main,
+          location: json.name
+        });
+        console.log(this.state);
+      });
   };
 
   render() {
-    return <div></div>;
+    const { temp, condition, location } = this.state;
+    return (
+      <div className="container">
+        <div className="weather_loca">
+          <p>장소: {location}</p>
+        </div>
+        <div className="weather_condition">
+          <p>기상: {condition}</p>
+          <p>온도: {temp}</p>
+        </div>
+      </div>
+    );
   }
 }
 
