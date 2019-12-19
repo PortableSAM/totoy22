@@ -1,17 +1,27 @@
 .weather_container {
   margin: auto;
   padding: 10px;
-  width: 530px;
+  width: 550px;
   height: 100%;
-  display: flex;
-  flex-flow: column wrap;
-  text-align: left;
 }
 
-.weather_container p,
+.weather_condition {
+  flex-wrap: nowrap;
+}
+
+.weather_right {
+  text-align: center;
+}
+.weather_right img {
+  width: 120px;
+  height: 120px;
+}
+
+.weather_condition p,
 .weather_title h5 {
   margin: auto;
-  padding: 10px 10px 10px 20px;
+  width: 100%;
+  padding: 5px;
   font-size: 2rem;
   font-weight: bold;
   color: #2b2b2b;
@@ -22,7 +32,14 @@
   .weather_container {
     width: 384px;
   }
-  .weather_container p {
+  .weather_condition {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .weather_right {
+    display: none;
+  }
+  .weather_condition p {
     font-size: 1.5rem;
   }
 }
