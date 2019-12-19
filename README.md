@@ -16,3 +16,4 @@
                Date Add to Home Page
 - 2019.12.18 : ADD Current Weather to landing page.
                Other CSS modifications
+- 2019.12.19 : ADD Weather Icon to Weather Component
