@@ -10,7 +10,7 @@ export default class Clock extends React.Component {
   };
   getClock = () => {
     const day = moment().format("LL");
-    const time = moment().format("LTS");
+    const time = moment().format("LT");
     this.setState({
       day,
       time,
