@@ -66,10 +66,10 @@ $RECYCLE.BIN/
 *.lnk
 
 # TodoApp Component
-**/[Cc]onfig/
+**/TodoApp/[Cc]onfig/
 
 # MovieApp Component
-**/[Ll]ib/
+**/component/**/lib/Key.js
 
 # Wthr Component
 **/[Ww]eather/
