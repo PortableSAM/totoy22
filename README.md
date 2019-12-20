@@ -1,4 +1,4 @@
-#Totoy22 Project#
+#Totoy22 Project
 - Daily & Weekly Box Office List
 - Build React.JS
 - Use Kobis Open API
