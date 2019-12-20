@@ -66,12 +66,12 @@ $RECYCLE.BIN/
 *.lnk
 
 # TodoApp Component
-**/[Cc]onfig/[Cc]onfig.js
+**/[Cc]onfig/
 
 # MovieApp Component
-**/[Ll]ib/[Kk]ey.js
+**/[Ll]ib/
 
 # Wthr Component
-**/[Ww]eather/[Ww]thrKey.js
+**/[Ww]eather/
 
 # End of https://www.gitignore.io/api/react,windows,firebase,visualstudiocode
