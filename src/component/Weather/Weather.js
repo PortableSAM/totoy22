@@ -1,8 +1,7 @@
 import React from "react";
 import "./Weather.css";
 import { Grid, Cell } from "react-mdl";
-
-const App_Id = "be70cc0b47a6331dc61023d7137347cb";
+import Key from "./WthrKey";
 
 export default class Weather extends React.Component {
   state = {
@@ -28,7 +27,7 @@ export default class Weather extends React.Component {
 
   _getWeather = ({ latitude, longitude }) => {
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${App_Id}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${Key}&units=metric`
     )
       .then(res => res.json())
       .then(json => {
