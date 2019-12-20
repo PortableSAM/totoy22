@@ -39,3 +39,14 @@
   color: #111;
   transition: 0.2s ease-in;
 }
+@media all and (max-width: 450px) {
+  .noteInput {
+    width: 300px;
+    min-width: 300px;
+  }
+  .formWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 2em;
+  }
+}

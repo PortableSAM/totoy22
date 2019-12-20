@@ -48,3 +48,15 @@ body {
   flex: 1 1 5%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+@media all and (max-width: 450px) {
+  .note {
+    padding: 10px;
+    width: 95%;
+    font-size: 1em;
+  }
+
+  .notesHeader h1 {
+    font-size: 2em;
+    margin-top: 2em;
+  }
+}
