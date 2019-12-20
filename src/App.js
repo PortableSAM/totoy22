@@ -16,7 +16,7 @@ export default class App extends React.Component {
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
                 <Link to="/BoxOffice">Box Office</Link>
-                <Link to="/Note">Note</Link>
+                <Link to="/Note">ToDoList</Link>
               </Navigation>
             </Header>
             <Drawer title="Build App">
@@ -30,7 +30,7 @@ export default class App extends React.Component {
                 Box Office
               </Link>
               <Link className="drawer_Item" to="/Note">
-                Note
+                ToDoList
               </Link>
             </Drawer>
             <Content>
