@@ -5,17 +5,19 @@ import PropTypes from "prop-types";
 export default class TestNote extends Component {
   constructor(props) {
     super(props);
-
-    this.message = "hello Note Page";
+    this.noteContent = props.noteContent;
+    this.noteId = props.noteId;
   }
 
   render(props) {
     return (
-      <div>
-        <h1>{this.message}</h1>
+      <div className="note fade-in">
+        <p className="noteContent">{this.noteContent}</p>
       </div>
     );
   }
 }
 
-TestNote.propTypes = {};
+TestNote.propTypes = {
+  noteContent: PropTypes.string
+};
