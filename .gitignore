@@ -75,4 +75,7 @@ $RECYCLE.BIN/
 # Wthr Component
 **/[Ww]eather/
 
+
+# TestComponents
+**/FireStore/
 # End of https://www.gitignore.io/api/react,windows,firebase,visualstudiocode
