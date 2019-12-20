@@ -67,15 +67,14 @@ $RECYCLE.BIN/
 *.lnk
 
 # TodoApp Component
-**/[Tt]doApp/config/
+**/Firebase/config/
 
 # MovieApp Component
-**/component/**/[lL]ib/[kK]ey.js
+**/MovieApp/lib/Key/
 
 # Wthr Component
 **/[Ww]eather/
 
 
-# TestComponents
-**/FireStore/
+
 # End of https://www.gitignore.io/api/react,windows,firebase,visualstudiocode

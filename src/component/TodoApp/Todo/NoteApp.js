@@ -2,7 +2,7 @@ import React from "react";
 import Note from "./Note";
 import "./NoteApp.css";
 import NoteForm from "../TodoForm/NoteForm";
-import { DB_Config } from "../config/config";
+import { DB_Config } from "../Firebase/config/config";
 import firebase from "firebase/app";
 import "firebase/database";
 
