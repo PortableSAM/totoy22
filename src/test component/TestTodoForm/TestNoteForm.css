@@ -2,7 +2,7 @@
   margin: auto;
 }
 
-.noteButton {
+.noteBtn {
   border: none;
   margin: 0px;
   border-top-right-radius: 4px;
@@ -15,7 +15,7 @@
   transition: 0.2s ease-out;
 }
 
-.noteButton:hover {
+.noteBtn:hover {
   background-color: #02ba85;
   color: #fff;
   transition: 0.2s ease-out;

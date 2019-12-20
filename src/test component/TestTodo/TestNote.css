@@ -1,5 +1,5 @@
 .note {
-  padding: 10px 10px 38px 34px;
+  padding: 20px;
   height: auto;
   margin: auto;
   margin-bottom: 8px;
@@ -39,7 +39,21 @@
 
 .noteContent {
   float: left;
-  padding-right: 70px;
-  padding-bottom: 10px;
+  margin: auto;
+  padding: 10px;
+  font-size: 1.5em;
   display: block;
+}
+.closebtn {
+  float: right;
+  padding-right: 5px;
+  padding-top: 5px;
+  font-size: 1.4em;
+  display: block;
+}
+
+.closebtn:hover {
+  color: red;
+  cursor: pointer;
+  transition: 0.7s;
 }

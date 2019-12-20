@@ -15,7 +15,7 @@ body {
   height: 100%;
 }
 
-.notesHeader {
+.notesHeader h1 {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
@@ -27,6 +27,7 @@ body {
   text-align: center;
   align-content: center;
   padding: 20px 0px 20px 0px;
+  margin-top: 0;
   margin-bottom: 6px;
   background-color: rgba(0, 0, 0, 0.5);
   text-shadow: 3px 3px 10px #000;
