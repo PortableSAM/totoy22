@@ -6,6 +6,7 @@
 .idea
 **/node_modules/*
 **/.firebaserc
+.firebase
 
 ### Firebase Patch ###
 .runtimeconfig.json
@@ -66,10 +67,10 @@ $RECYCLE.BIN/
 *.lnk
 
 # TodoApp Component
-**/TodoApp/[Cc]onfig/
+**/[Tt]doApp/config/
 
 # MovieApp Component
-**/component/**/lib/Key.js
+**/component/**/[lL]ib/[kK]ey.js
 
 # Wthr Component
 **/[Ww]eather/

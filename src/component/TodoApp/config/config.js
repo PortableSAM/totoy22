@@ -9,3 +9,5 @@ export const DB_Config = {
   appId: "1:949038920824:web:be562f9959ad093af0a98d",
   measurementId: "G-1ZE3JL8927"
 };
+
+export default DB_Config;
