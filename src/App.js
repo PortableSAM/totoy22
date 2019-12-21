@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import "./App.css";
 import { Home, About, BoxOffice } from "./component/Nav";
 import NoteApp from "./component/TodoApp/Todo/NoteApp";
+import BoardApp from "./TestComponent/Board/BoardIndex";
 
 export default class App extends React.Component {
   render() {
@@ -17,6 +18,7 @@ export default class App extends React.Component {
                 <Link to="/about">About</Link>
                 <Link to="/BoxOffice">Box Office</Link>
                 <Link to="/Note">ToDoList</Link>
+                <Link to="/Board">TEST</Link>
               </Navigation>
             </Header>
             <Drawer title="Build App">
@@ -38,6 +40,7 @@ export default class App extends React.Component {
               <Route path="/about" component={About} />
               <Route path="/BoxOffice" component={BoxOffice} />
               <Route path="/Note" component={NoteApp} />
+              <Route path="/Board" component={BoardApp} />
             </Content>
           </Layout>
         </div>

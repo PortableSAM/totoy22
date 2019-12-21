@@ -62,7 +62,7 @@ export default class TestNoteApp extends React.Component {
     return (
       <div className="notesWrapper">
         <div className="notesHeader">
-          <h1>React & Firebase To-Do List</h1>
+          <h1>To-Do List</h1>
         </div>
         <div className="notesBody">
           {this.state.notes.map(note => {
